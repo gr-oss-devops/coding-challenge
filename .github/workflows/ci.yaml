@@ -18,7 +18,8 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-#        run: |
+        run: |
+          echo "Build with Maven"
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
@@ -26,4 +27,5 @@ jobs:
           terraform_version: "1.1.7"
 
       - name: Run Terraform
-#        run: |
+        run: |
+          echo "Run Terraform"
