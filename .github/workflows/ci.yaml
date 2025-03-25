@@ -1,8 +1,11 @@
 name: Main CI
 
 on:
-  push:
-    branches:
+  workflow_dispatch:
+    inputs:
+      username:
+        description: 'The username of the user to fetch the repositories'
+        required: true
 
 jobs:
   build:
@@ -21,3 +24,10 @@ jobs:
       - name: Build with Maven
         run: |
           echo "Build with Maven"
+
+      - name: Logging
+        run: echo ${{ github.event.inputs.username }}
+
+      - name: Fetch repo list
+        run: |
+          echo "Fetch repo list"
