@@ -1,4 +1,5 @@
 # Coding challenge
+This coding challenge is about creating a simple application that will list all repositories for a given username/orgname from Github. The application should be written in Java with Spring and should be deployed to AWS EC2 instance using Terraform.
 
 - [ ] Write an application in Java & Spring that will:
   - [ ] Expose a REST endpoint:
